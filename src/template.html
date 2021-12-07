@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do-List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  </head>
+  <body>
+
+    <div class="title-container">
+      <h1 class="title">To-Do App</h1>
+    </div>
+
+    <div class="body-container">
+      <div class="task-container">
+        <div class="folders">
+          <h2 class="projects">Projects</h2>
+          <form class="new-project">
+            <label class="new-project-label">
+              Name:
+              <input type="text" name="name">
+            </label>
+            <i class="fas fa-plus"></i>
+          </form>
+          <div class="project-row">
+            <li id="default" class="project current" >Default</li>
+            <!-- <i class="fas fa-trash"></i> -->
+          </div>
+
+        </div>
+        <div class="todos">
+          <form class="new-todo">
+            <label class="add-label">
+              Description:
+              <input type="text" name="description">
+            </label>
+            <label class="add-label">
+              Due Date:
+              <input type="date" name="date">
+            </label>
+            <label class="add-label">
+              Priority:
+              <select name="priority">
+                <option>low</option>
+                <option>medium</option>
+                <option>high</option>
+              </select>
+            </label>
+            <button type="button" class="add">Add To-Do</button>
+          </form>
+      
+          <div class="grid-container">
+            <div class="grid-row">
+              <i class="far fa-check-square"></i>
+              
+              <div class="description">
+      
+              </div>
+              <div class="duedate">
+      
+              </div>
+              <div class="priority">
+      
+              </div>
+              <button type="button" class="edit">Edit</button>
+              <button type="button" class="remove">Remove</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+  </body>
+
+</html>

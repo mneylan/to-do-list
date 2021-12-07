@@ -1,0 +1,28 @@
+<template id="task-template">
+      <div class="grid-row">
+        <i class="far fa-check-square"></i>
+        
+        <div class="description">
+
+        </div>
+        <div class="duedate">
+
+        </div>
+        <div class="priority">
+
+        </div>
+        <button type="button" class="edit">Edit</button>
+        <button type="button" class="remove">Remove</button>
+      </div>
+    </template>
+
+
+    let taskTemplate = document.getElementById('task-template')
+
+
+let grid = document.querySelector('.grid-container')
+let taskElement = document.importNode(taskTemplate.content, true)
+
+let desc = taskElement.querySelector('.description')
+desc.id = "pingo"
+grid.appendChild(taskElement)
